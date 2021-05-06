@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.yhongm.mark_view.MainActivity">
+
+    <View
+        android:id="@+id/fake_statusbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/left"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+            />
+
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="1/8"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            />
+
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/text"
+            android:layout_marginRight="20dp"
+            android:progress="12"
+            android:progressDrawable="@drawable/mybar"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How old are you ?"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="40dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    <com.yhongm.mark_core.ScaleView
+        android:id="@+id/arc_scaleview"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        app:arcLineColor="#ff0000"
+        app:drawLineSpace="1"
+        app:drawTextSpace="10"
+        app:everyScaleValue="1"
+        app:indicatorColor="#7BCCD6"
+        app:scaleLineColor="#D2D9DF"
+        app:scaleMin="0"
+        app:scaleNum="200"
+        app:shape="line"
+        app:scaleSpace="1"
+        app:scaleTextColor="#000000"
+        app:scaleUnit="单位"
+        app:selectTextColor="#000000" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="68dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:background="@drawable/btn_bg"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+         />
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_output_value"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/arc_scaleview"-->
+<!--        android:layout_centerHorizontal="true" />-->
+
+</LinearLayout>
